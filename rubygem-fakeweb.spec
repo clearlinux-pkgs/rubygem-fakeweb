@@ -4,7 +4,7 @@
 #
 Name     : rubygem-fakeweb
 Version  : 1.3.0
-Release  : 2
+Release  : 3
 URL      : https://rubygems.org/downloads/fakeweb-1.3.0.gem
 Source0  : https://rubygems.org/downloads/fakeweb-1.3.0.gem
 Summary  : No detailed summary available
