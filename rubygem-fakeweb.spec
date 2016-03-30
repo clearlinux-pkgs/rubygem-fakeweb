@@ -4,7 +4,7 @@
 #
 Name     : rubygem-fakeweb
 Version  : 1.3.0
-Release  : 3
+Release  : 4
 URL      : https://rubygems.org/downloads/fakeweb-1.3.0.gem
 Source0  : https://rubygems.org/downloads/fakeweb-1.3.0.gem
 Summary  : No detailed summary available
@@ -12,7 +12,6 @@ Group    : Development/Tools
 License  : MIT
 BuildRequires : ruby
 BuildRequires : rubygem-hoe
-BuildRequires : rubygem-metaclass
 BuildRequires : rubygem-mocha
 BuildRequires : rubygem-rdoc
 BuildRequires : rubygem-test-unit
@@ -60,83 +59,62 @@ popd
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/ruby/gems/2.2.0/cache/fakeweb-1.3.0.gem
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/MultipleMatchingURIsError/cdesc-MultipleMatchingURIsError.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/NetConnectNotAllowedError/cdesc-NetConnectNotAllowedError.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/Registry/cdesc-Registry.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/Responder/cdesc-Responder.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/Response/cdesc-Response.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/StubSocket/cdesc-StubSocket.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/Utility/cdesc-Utility.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/allow_net_connect%3d-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/allow_net_connect%3f-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/cdesc-FakeWeb.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/clean_registry-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/last_request-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/print_missing_http_method_deprecation_warning-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/register_uri-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/FakeWeb/registered_uri%3f-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/Net/BufferedIO/cdesc-BufferedIO.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/Net/HTTP/cdesc-HTTP.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/Net/cdesc-Net.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/cache.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/page-LICENSE_txt.ri
-/usr/lib64/ruby/gems/2.2.0/doc/fakeweb-1.3.0/ri/page-README_rdoc.ri
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/.autotest
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/.gitignore
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/CHANGELOG
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/LICENSE.txt
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/README.rdoc
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/Rakefile
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/fakeweb.gemspec
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/lib/fake_web.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/lib/fake_web/ext/net_http.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/lib/fake_web/registry.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/lib/fake_web/responder.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/lib/fake_web/response.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/lib/fake_web/stub_socket.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/lib/fake_web/utility.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/lib/fakeweb.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/fixtures/google_response_from_curl
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/fixtures/google_response_with_transfer_encoding
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/fixtures/google_response_without_transfer_encoding
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/fixtures/test_example.txt
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/fixtures/test_txt_file
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_allow_net_connect.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_deprecations.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_fake_authentication.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_fake_web.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_fake_web_open_uri.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_helper.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_last_request.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_missing_open_uri.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_missing_pathname.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_other_net_http_libraries.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_precedence.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_query_string.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_regexes.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_response_headers.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_trailing_slashes.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/test_utility.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/History.txt
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/Manifest.txt
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/README.txt
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/Rakefile
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/lib/net_fix.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/lib/right_http_connection.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/setup.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/.document
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/.gitignore
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/LICENSE
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/README.rdoc
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/Rakefile
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/VERSION
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/lib/samuel.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/lib/samuel/net_http.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/lib/samuel/request.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/samuel.gemspec
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/test/request_test.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/test/samuel_test.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/test/test_helper.rb
-/usr/lib64/ruby/gems/2.2.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/test/thread_test.rb
-/usr/lib64/ruby/gems/2.2.0/specifications/fakeweb-1.3.0.gemspec
+/usr/lib64/ruby/gems/2.3.0/cache/fakeweb-1.3.0.gem
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/.autotest
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/.gitignore
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/CHANGELOG
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/LICENSE.txt
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/README.rdoc
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/Rakefile
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/fakeweb.gemspec
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/lib/fake_web.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/lib/fake_web/ext/net_http.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/lib/fake_web/registry.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/lib/fake_web/responder.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/lib/fake_web/response.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/lib/fake_web/stub_socket.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/lib/fake_web/utility.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/lib/fakeweb.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/fixtures/google_response_from_curl
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/fixtures/google_response_with_transfer_encoding
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/fixtures/google_response_without_transfer_encoding
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/fixtures/test_example.txt
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/fixtures/test_txt_file
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_allow_net_connect.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_deprecations.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_fake_authentication.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_fake_web.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_fake_web_open_uri.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_helper.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_last_request.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_missing_open_uri.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_missing_pathname.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_other_net_http_libraries.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_precedence.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_query_string.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_regexes.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_response_headers.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_trailing_slashes.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/test_utility.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/History.txt
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/Manifest.txt
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/README.txt
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/Rakefile
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/lib/net_fix.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/lib/right_http_connection.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/right_http_connection-1.2.4/setup.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/.document
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/.gitignore
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/LICENSE
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/README.rdoc
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/Rakefile
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/VERSION
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/lib/samuel.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/lib/samuel/net_http.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/lib/samuel/request.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/samuel.gemspec
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/test/request_test.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/test/samuel_test.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/test/test_helper.rb
+/usr/lib64/ruby/gems/2.3.0/gems/fakeweb-1.3.0/test/vendor/samuel-0.2.1/test/thread_test.rb
+/usr/lib64/ruby/gems/2.3.0/specifications/fakeweb-1.3.0.gemspec
