@@ -4,7 +4,7 @@
 #
 Name     : rubygem-fakeweb
 Version  : 1.3.0
-Release  : 5
+Release  : 6
 URL      : https://rubygems.org/downloads/fakeweb-1.3.0.gem
 Source0  : https://rubygems.org/downloads/fakeweb-1.3.0.gem
 Summary  : No detailed summary available
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : MIT
 BuildRequires : ruby
 BuildRequires : rubygem-hoe
+BuildRequires : rubygem-metaclass
 BuildRequires : rubygem-mocha
 BuildRequires : rubygem-rdoc
 BuildRequires : rubygem-test-unit
@@ -27,6 +28,7 @@ gem unpack %{SOURCE0}
 gem spec %{SOURCE0} -l --ruby > rubygem-fakeweb.gemspec
 
 %build
+export LANG=C
 gem build rubygem-fakeweb.gemspec
 
 %install
@@ -49,6 +51,7 @@ cp -pa .%{_bindir}/* \
 fi
 
 %check
+export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
